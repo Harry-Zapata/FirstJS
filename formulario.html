@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+	<meta name="viewport" content= "width=device-width, user-scalable=no">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    
+    <header id="header">
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <h4>Usuario</h4>
+        </div>
+
+        <div class="options__menu">	
+
+            <a href="./index.html">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Lista de empleados</h4>
+                </div>
+            </a>
+
+            <a href="./formulario.html" class="selected">
+                <div class="option">
+                    <i class="far fa-file" title="Portafolio"></i>
+                    <h4>formulario de registro</h4>
+                </div>
+            </a>
+           
+
+            <a href="./data.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>data empleado</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+        <h1>FORMULARIO</h1>
+		<form action="" class="formulario" id="formulario">
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Marco Antonio">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre debe tener de 2 a 14 caracteres.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__apellido">
+				<label for="nombre" class="formulario__label">Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Puclla Murillo">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El nombre debe tener de 2 a 14 caracteres.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="mapm1622@gmail.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__cargo">
+				<label for="cargo" class="formulario__label">Cargo</label>
+				<div class="formulario__grupo-input">
+					<select class="formulario__input" name="cargo" id="cargo">
+						<option value="" selected>Elejir su cargo</option>
+						<option value="jefe">Jefe</option>
+						<option value="analista">Analista</option>
+						<option value="programador">Programador</option>
+						<option value="soporte">Soporte</option>
+						<option value="asistente">Asistente</option>
+					</select>
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Los cargos deben ser Jefe, Analista, Programador, Soporte y
+					Asistente.</p>
+			</div>
+
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> <span id="validacion_correo">Por favor rellena el formulario correctamente.</span> </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+    </main>
+	<script src="./js/menu.js"></script>
+	<script src="./js/validar.js"></script>
+	<script src="./js/enviar.js"></script>
+    
+</body>
+</html>

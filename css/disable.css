@@ -1,0 +1,19 @@
+input:disabled,select:disabled,button:disabled {
+    background-color: rgb(192, 186, 186);
+    color: linen;
+    opacity: 1;
+}
+button:disabled:hover{
+    cursor: auto;
+    box-shadow: 0 0 0;
+}
+h1{
+    display: inline;
+}
+#editar{
+    background: #0275d8;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+}

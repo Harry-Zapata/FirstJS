@@ -1,0 +1,10 @@
+th i{
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 2px;
+    margin-left:5px;
+}
+th i:hover{
+    cursor: pointer;
+    background: #000;
+}

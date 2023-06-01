@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstJS</title>
+    <link rel="stylesheet" href="./css/tabla.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/iconos.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body">
+
+    <header id="header">
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <h4>Usuario</h4>
+        </div>
+
+        <div class="options__menu">
+
+            <a href="./index.html" class="selected">
+                <div class="option">
+                    <i class="fas fa-home" title="Inicio"></i>
+                    <h4>Lista de empleados</h4>
+                </div>
+            </a>
+
+            <a href="./formulario.html">
+                <div class="option">
+                    <i class="far fa-file" title="Portafolio"></i>
+                    <h4>formulario de registro</h4>
+                </div>
+            </a>
+
+
+            <a href="./data.html">
+                <div class="option">
+                    <i class="far fa-address-card" title="Nosotros"></i>
+                    <h4>data empleado</h4>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <main>
+        <h2>Lista De Usuarios</h2>
+        <table id="tabla">
+
+        </table>
+    </main>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/pintar.js"></script>
+    <script src="./js/select.js"></script>
+    <script src="./js/iconos.js"></script>
+</body>
+
+</html>
